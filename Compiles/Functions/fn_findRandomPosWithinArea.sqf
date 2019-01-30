@@ -1,6 +1,5 @@
 //diag_log format["_findRandomPosWithinArea: _this = %1",_this];
-params["_areaMarker","_noPositionsToFind",["_units",[]],["_separation",100]];
-private _blackList = [];
+params["_areaMarker","_noPositionsToFind",["_units",[]],["_separation",100],["_blackList",[]]];
 {_blackList pushBack [getPos _x, _separation]} forEach _units;
 private _spawnPos = [0,0,0];
 private _posnFound = [];

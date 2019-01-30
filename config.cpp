@@ -14,10 +14,14 @@ class CfgFunctions {
 		};
 		class GMS_CoreFunctions {
 			file = "addons\GMSCore\Compiles\Functions";
+			class configureMapParameters {};
 			class getNumberFromRange {};
 			class getIntegerFromRange {};
 			class dynamicConfigs {};
  			class findRandomPosWithinArea {};
+			class getCfgType {};
+			class isClass {};
+			class emptyObjectInventory {};
 		};
 		class GMS_Units {
 			file = "addons\GMSCore\Compiles\Units";
