@@ -14,7 +14,7 @@ class CfgFunctions {
 		};
 		class GMS_CoreFunctions {
 			file = "addons\GMSCore\Compiles\Functions";
-			class configureMapParameters {};
+			//class configureMapParameters {};
 			class getNumberFromRange {};
 			class getIntegerFromRange {};
 			class dynamicConfigs {};
@@ -32,6 +32,8 @@ class CfgFunctions {
 			class setupGroupBehavior {};			
 			class unitRemoveAllGear {};
 			class setupGroupMoney {};
+			//class addNVGs {};
+			//class addLaunchers {};
 		};
 	};
 };

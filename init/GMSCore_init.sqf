@@ -1,4 +1,4 @@
-[] call GMS_fnc_configureMapParameters;
+//[] call GMS_fnc_configureMapParameters;
 GMS_modType = if (!isNull (configFile >> "CfgPatches" >> "exile_server")) then {"Exile"} else {if (!isnull (configFile >> "CfgPatches" >> "a3_epoch_server")) then {"Epoch"} else {""}};
 GMS_modType == "";
 if ((tolower GMS_modType) isEqualto "epoch") then {

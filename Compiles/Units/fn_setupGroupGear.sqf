@@ -11,15 +11,7 @@ params["_group","_gear",["_launchersPerGroup",1],["_useNVG",false],["_blackliste
 	#define GMS_throawables 8
 	#define GMS_launchers 9
 	#define GMS_nvg 10
-/*
-{
-	diag_log format["_setupGroupGear: _this %1 = %2",_forEachIndex,_this select _forEachIndex];
-} forEach _this;
-{
 
-	diag_log format["_setupGroupGear: _gear %1 = %2",_forEachIndex,_gear select _forEachIndex];
-} forEach _gear;
-*/
 private _lanchersAdded = 0;
 {
 	private _unit = _x;
