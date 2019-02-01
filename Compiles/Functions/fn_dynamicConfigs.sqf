@@ -97,7 +97,7 @@ _classnameList = [];
 		};
 	};
 	};
-} forEach _classnameList;
+} count _classnameList;
 
 private _return = 
 	[_wpnAR + _wpnLMG + _wpnSMG + _wpnShotGun + _wpnSniper,

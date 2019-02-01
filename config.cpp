@@ -32,8 +32,18 @@ class CfgFunctions {
 			class setupGroupBehavior {};			
 			class unitRemoveAllGear {};
 			class setupGroupMoney {};
-			//class addNVGs {};
-			//class addLaunchers {};
+			class removeNVG {};
+			class removeLauncher {};
+			class addMPEventHandlers {};
+			class removeMPEventHandlers {};
+		};
+		class GMS_Players {
+			file = "addons\GMSCore\Compiles\Players";
+			class giveTakeCrypto {};  // Please see credits in the sqf.
+		};
+		class GMS_Client {
+			file = "addons\GMSCore\Compiles\Client";
+			class messagePlayers {};
 		};
 	};
 };

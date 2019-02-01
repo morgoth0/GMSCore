@@ -11,7 +11,7 @@ _skills params["_accuracy","_aimingSpeed","_shake","_spotDistance","_spotTime","
 	_x setSkill ["reloadSpeed", _reloadSpeed];
 	_x setSkill ["spotDistance", _spotDistance];
 	_x setSkill ["spotTime", _spotTime];
-} forEach units _group;
+} count (units _group);
 
 /*
 GMSAI_skillBlue = [ 

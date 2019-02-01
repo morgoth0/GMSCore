@@ -1,4 +1,4 @@
-params["_group","_gear",["_launchersPerGroup",1],["_useNVG",false],["_blacklistedItems",[]]];
+params["_group","_gear",["_launchersPerGroup",1],["_useNVG",false]];
 
 	#define GMS_primary 0
 	#define GMS_secondary 1
@@ -41,7 +41,7 @@ private _lanchersAdded = 0;
 		private _pointers = getArray (configFile >> "CfgWeapons" >> _weap >> "WeaponSlotsInfo" >> "PointerSlot" >> "compatibleItems");
 		private _muzzles = getArray (configFile >> "CfgWeapons" >> _weap >> "WeaponSlotsInfo" >> "MuzzleSlot" >> "compatibleItems");
 		private _underbarrel = getArray (configFile >> "CfgWeapons" >> _weap >> "WeaponSlotsInfo" >> "UnderBarrelSlot" >> "compatibleItems");
-		private _legalOptics = _optics - _blacklistedItems;
+		private _legalOptics = _optics;
 		_unit addMagazines [selectRandom _ammoChoices, 3];
 		if (random 1 < 0.4) then {_unit addPrimaryWeaponItem (selectRandom _muzzles)};
 		if (random 1 < 0.4) then {_unit addPrimaryWeaponItem (selectRandom _legalOptics)};
@@ -78,6 +78,7 @@ private _lanchersAdded = 0;
 	{
 		private _selectedLauncher = selectRandom (_gear select GMS_launchers);
 		_unit addWeaponGlobal _selectedLauncher;
+		_unit setVariable["GMS_launcher",_selectedLauncher];
 		for "_i" from 1 to 3 do 
 		{
 			_unit addItemToBackpack (getArray (configFile >> "CfgWeapons" >> _selectedLauncher >> "magazines") select 0); // call BIS_fnc_selectRandom;
@@ -88,10 +89,12 @@ private _lanchersAdded = 0;
 	{
 		if(sunOrMoon < 0.2 && _useNVG)then
 		{
-			_unit addWeapon selectRandom (_gear select GMS_nvg);
+			private _selectedNVG = selectRandom (_gear select GMS_nvg);
+			_unit addWeapon _selectedNVG;
+			_unit setVariable["GMS_nvg",_selectedNVG];
 		};
 	};
-} forEach units _group;
+} count (units _group);
 
 
 
