@@ -1,4 +1,8 @@
 /*
+	GMS_fnc_giveTakeCrypto
+
+	Purpose: update crypto on player.
+
 	Updated for Epoch 0.3.8.0 by He-Man
 	http://epochmod.com/forum/index.php?/topic/34661-release-hs-blackmarket-16-new-trader-system-special-trader-blackmarket/&page=38
 

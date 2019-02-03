@@ -1,4 +1,16 @@
-//diag_log format["_findRandomPosWithinArea: _this = %1",_this];
+/*
+	GMS_fnc_findRandomPosWithinArea
+
+	Purpose: Returns N positions within an area with spacing from nearby units/players and each other.
+
+	Parameters
+		_areaMarker: a marker designating the area to be search (rectangualr only)
+		_noPositionsToFind: number of positions within the area to search for.
+		_units: players or units from which a certain spacing should be kbRemoveTopic
+		_separation: the spacing to use for positions, players/units, effectiveCommander
+		_blackList: a list of areas to be avoided.
+*/
+
 params["_areaMarker","_noPositionsToFind",["_units",[]],["_separation",100],["_blackList",[]]];
 {_blackList pushBack [getPos _x, _separation]} forEach _units;
 private _spawnPos = [0,0,0];

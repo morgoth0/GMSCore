@@ -1,3 +1,7 @@
+class GMSCoreBuild {
+	build = 0.1;
+	buildDate = "2-1-19";
+};
 class CfgPatches {
 	class GMSCore {
 		units[] = {};
@@ -22,6 +26,8 @@ class CfgFunctions {
 			class getCfgType {};
 			class isClass {};
 			class emptyObjectInventory {};
+			class checkClassnames {};
+			class substringsPresentInString {};
 		};
 		class GMS_Units {
 			file = "addons\GMSCore\Compiles\Units";

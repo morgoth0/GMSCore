@@ -1,3 +1,10 @@
+/*
+	GMS_fnc_getNumberFromRange
+
+	Purpose: find a random number within a range of N1 and N2.
+	Parameters: _data in the format [_min,_max]. If _min == _max, _min is returned. If _data == [_min] or _min, _min is returned.
+	Returns: a random number within the specified range.
+*/
 params["_data"];
 _value = objNull;
 if ((typeName _data) isEqualTo "ARRAY") then

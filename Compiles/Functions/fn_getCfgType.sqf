@@ -1,3 +1,14 @@
+/*
+    GMS_fnc_getCfgType
+
+    Purpose: determine which Cfg file to use for lookups
+
+    Parameters: classname of an object to find a config file for
+
+    Return: The name of the config file to use.
+
+*/
+
 params["_item"];
 private _return = "";
 if (isClass(configFile >> "CfgWeapons" >> _item)) then 

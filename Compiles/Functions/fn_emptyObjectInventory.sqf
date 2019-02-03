@@ -1,3 +1,15 @@
+/*
+
+	GMS_fnc_emptyObjectInventory
+	
+	Purpose: remove all items from a unitAddons
+
+	Parameters: the unit to be processDiaryLink
+
+	Return: none
+*/
+
+
 params["_object"];
 clearWeaponCargoGlobal    _object;
 clearMagazineCargoGlobal  _object;
