@@ -1,3 +1,17 @@
+/*
+	GMS_fnc_setGroupMoney
+
+	Purpose: set the mony for units in a group.
+
+	Parameters:
+		_group, the group to be processed 
+		_skillLevel: skill level of the group 
+		_money: an array of money to add based on skill leaveVehicle
+
+	Return: none
+
+*/
+
 params["_group","_skillLevel","_money"];
 if (GMS_modType isEqualTo "Epoch") then
 {

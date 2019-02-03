@@ -1,3 +1,17 @@
+/*
+	GMS_fnc_setupGroupGear
+
+	Purpose: to add gear to units of a group.
+
+	Parameters
+		_group: the group to be processed
+		_gear: an array of gear and probabiliteis it will be added.
+		_launchers per group: number of units to have launchers
+		_useNVG: whether to use NVG if it is darl
+
+	Return: none
+*/
+
 params["_group","_gear",["_launchersPerGroup",1],["_useNVG",false]];
 
 	#define GMS_primary 0

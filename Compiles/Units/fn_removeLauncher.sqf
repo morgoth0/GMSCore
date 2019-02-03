@@ -1,3 +1,14 @@
+
+/*
+	GMS_fnc_removeLauncher
+
+	Purpose: remove launcher and rounds from a unit including any on the ground nearObjectsReady
+
+	Parameters
+		_unit: the unit to be processed
+
+	Return: none.
+*/
 params["_unit"];
 private _lancher = _unit getVariable["GMS_launcher",""];
 if !(_lancher isEqualTo "") then
