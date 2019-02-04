@@ -42,6 +42,8 @@ class CfgFunctions {
 			class removeLauncher {};
 			class addMPEventHandlers {};
 			class removeMPEventHandlers {};
+			class throwSmoke {};
+			class healSelf {};
 		};
 		class GMS_Players {
 			file = "addons\GMSCore\Compiles\Players";

@@ -6,7 +6,7 @@
 	Parameters: The unit to be HandleDamage
 	
 	Return: none
-*/*
+*/
 
 params["_unit"];
 removeVest _unit;
