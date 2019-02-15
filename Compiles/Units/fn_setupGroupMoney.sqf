@@ -11,7 +11,7 @@
 	Return: none
 
 */
-
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_group","_skillLevel","_money"];
 if (GMS_modType isEqualTo "Epoch") then
 {

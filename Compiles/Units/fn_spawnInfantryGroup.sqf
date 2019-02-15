@@ -10,7 +10,7 @@
 		
 	Return: the group that was spawned.
 */
-
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_groupPos","_units","_alertDistance"];
 private _group = createGroup GMS_side;
 _players = _groupPos nearEntities["Man",_alertDistance] select {isPlayer _x};

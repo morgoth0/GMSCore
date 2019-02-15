@@ -5,6 +5,7 @@
 	Parameters: _data in the format [_min,_max]. If _min == _max, _min is returned. If _data == [_min] or _min, _min is returned.
 	Returns: a random number within the specified range.
 */
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_data"];
 _value = objNull;
 if ((typeName _data) isEqualTo "ARRAY") then

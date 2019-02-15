@@ -7,7 +7,7 @@
 
 	Return: none
 */
-
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_group"];
 if (isNull _group) exitWith {};
 diag_log format["_deleteInfantryGroup: _group = %1",_group];

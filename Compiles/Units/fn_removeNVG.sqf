@@ -8,7 +8,7 @@
 
     Return: none
 */
-
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_unit"];
 private _nvg = _unit getVariable["GMS_nvg",""];
 if !(_nvg isEqualTo "") then

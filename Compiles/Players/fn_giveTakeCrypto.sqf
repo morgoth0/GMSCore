@@ -23,15 +23,16 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	Contact : halvhjearne@gmail.com
 */
-	params["_player","_nr"];
-	private["_cIndex","_vars","_current_crypto","_current_cryptoRaw","_playerCryptoLimit"];
-    _cIndex = EPOCH_customVars find "Crypto";
-    _vars = _player getVariable["VARS", call EPOCH_defaultVars_SEPXVar];
-    _current_crypto = _vars select _cIndex;
-    _current_cryptoRaw = _current_crypto;
-    _playerCryptoLimit = EPOCH_customVarLimits select _cIndex;
-    _playerCryptoLimit params ["_playerCryptoLimitMax","_playerCryptoLimitMin"];
-    _current_crypto = ((_current_cryptoRaw + _nr) min _playerCryptoLimitMax) max _playerCryptoLimitMin;
-    _current_crypto remoteExec ['EPOCH_effectCrypto',(owner _player)];
-    _vars set[_cIndex, _current_crypto];
-    _player setVariable["VARS", _vars];
+#include "\addons\GMSCore\init\GMS_defines.hpp"
+params["_player","_nr"];
+private["_cIndex","_vars","_current_crypto","_current_cryptoRaw","_playerCryptoLimit"];
+_cIndex = EPOCH_customVars find "Crypto";
+_vars = _player getVariable["VARS", call EPOCH_defaultVars_SEPXVar];
+_current_crypto = _vars select _cIndex;
+_current_cryptoRaw = _current_crypto;
+_playerCryptoLimit = EPOCH_customVarLimits select _cIndex;
+_playerCryptoLimit params ["_playerCryptoLimitMax","_playerCryptoLimitMin"];
+_current_crypto = ((_current_cryptoRaw + _nr) min _playerCryptoLimitMax) max _playerCryptoLimitMin;
+_current_crypto remoteExec ['EPOCH_effectCrypto',(owner _player)];
+_vars set[_cIndex, _current_crypto];
+_player setVariable["VARS", _vars];

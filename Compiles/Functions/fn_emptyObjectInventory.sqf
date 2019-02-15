@@ -8,8 +8,7 @@
 
 	Return: none
 */
-
-
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_object"];
 clearWeaponCargoGlobal    _object;
 clearMagazineCargoGlobal  _object;

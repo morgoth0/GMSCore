@@ -43,7 +43,7 @@
 	_lootItems		// 24 (mod-specific loot itmes such as car parts, raw materials, defib and the like)
 	];
 */
-
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params[["_maximumPrice",1000],["_blackListedItems",[]],["_blacklistedCategories",[]],["_blacklistedClassnameRoots",[]]];
 _GMSCore_headgearList = [];
 _GMSCore_SkinList = [];

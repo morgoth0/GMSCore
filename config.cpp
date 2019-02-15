@@ -1,6 +1,6 @@
 class GMSCoreBuild {
 	build = 0.1;
-	buildDate = "2-1-19";
+	buildDate = "2-15-19";
 };
 class CfgPatches {
 	class GMSCore {
@@ -28,6 +28,8 @@ class CfgFunctions {
 			class emptyObjectInventory {};
 			class checkClassnames {};
 			class substringsPresentInString {};
+			class removeEventHandlers {};
+			class removeMPEventHandlers {};
 		};
 		class GMS_Units {
 			file = "addons\GMSCore\Compiles\Units";
@@ -40,14 +42,15 @@ class CfgFunctions {
 			class setupGroupMoney {};
 			class removeNVG {};
 			class removeLauncher {};
-			class addMPEventHandlers {};
-			class removeMPEventHandlers {};
 			class throwSmoke {};
 			class healSelf {};
 		};
 		class GMS_Players {
 			file = "addons\GMSCore\Compiles\Players";
 			class giveTakeCrypto {};  // Please see credits in the sqf.
+			class giveTakeRespect {};
+			class giveTakeTabs {};
+			class updatePlayerKills {};
 		};
 		class GMS_Client {
 			file = "addons\GMSCore\Compiles\Client";

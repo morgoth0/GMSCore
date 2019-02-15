@@ -1,3 +1,4 @@
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_unit","_eventHandlerTypes"];
 {
 	_unit removeAllMPEventHandlers _x;

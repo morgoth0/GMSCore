@@ -1,3 +1,4 @@
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 (_this select 3) params["_unit"];
 _countFAK = {_x isEqualTo "FAK"} count (magazines _unit);
 if !("FAK" in (magazines _unit)) then 

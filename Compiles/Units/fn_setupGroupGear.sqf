@@ -11,7 +11,7 @@
 
 	Return: none
 */
-
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_group","_gear",["_launchersPerGroup",1],["_useNVG",false]];
 
 	#define GMS_primary 0

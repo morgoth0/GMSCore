@@ -1,3 +1,4 @@
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_group","_eventHandlers"];  // where _eventHandlers is an array with the format ["an MP event handler function, name of event handler (e.g., "mpkilled")].
 diag_log format["[GMSCore] _addMPEventHandlers: _group = %1  | _eventHandlers = %2",_group,_eventHandlers];
 {

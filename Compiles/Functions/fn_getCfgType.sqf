@@ -8,7 +8,7 @@
     Return: The name of the config file to use.
 
 */
-
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_item"];
 private _return = "";
 if (isClass(configFile >> "CfgWeapons" >> _item)) then 

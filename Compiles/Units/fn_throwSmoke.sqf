@@ -1,3 +1,4 @@
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 _parameters = _this select 3;
 (_this select 3) params[["_unit",objNull],["_smokeShell","SmokeShellBlue"],["_dir",0]];
 if !(_smokeShell in (magazines _unit)) then {_unit addMagazine[_smokeShell,1];};

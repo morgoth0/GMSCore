@@ -12,6 +12,7 @@
 		1 - N repreenting the number of substrings found, if one or more is found.
 		
 */
+#include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_string","_substrings"];  // returns the number of substrings present in a string.
 private _count = 0;
 {
