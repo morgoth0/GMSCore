@@ -1,5 +1,5 @@
 #include "\addons\GMSCore\init\GMS_defines.hpp"
-params["_messageType","_message",["_recipients",allPlayers];
+params["_messageType","_message",["_recipients",allPlayers]];
 diag_log format["[GMSCore]  _messagePlayers: _messageType = %1 | _message = %2 | _recipients = %3",_messageType,_message,_recipients];
 {
 	if (isPlayer _x) then {
