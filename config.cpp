@@ -45,6 +45,10 @@ class CfgFunctions {
 			class throwSmoke {};
 			class healSelf {};
 		};
+		class GMS_Vehicles {
+			file = "addons\GMSCore\Compiles\Vehicles";
+			class loadVehicleCrew {};
+		};
 		class GMS_Players {
 			file = "addons\GMSCore\Compiles\Players";
 			class giveTakeCrypto {};  // Please see credits in the sqf.
