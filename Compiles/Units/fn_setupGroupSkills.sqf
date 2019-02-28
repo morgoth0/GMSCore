@@ -11,6 +11,7 @@
 */
 #include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_group","_skills"];
+//diag_log format["_setupGroupSkills: _group = %1 | _skills = %2",_group,_skills];
 _skills params["_accuracy","_aimingSpeed","_shake","_spotDistance","_spotTime","_courage","_reloadSpeed","_commanding","_general"];
 {
 	//_x setSkill _general;
@@ -23,18 +24,4 @@ _skills params["_accuracy","_aimingSpeed","_shake","_spotDistance","_spotTime","
 	_x setSkill ["reloadSpeed", _reloadSpeed];
 	_x setSkill ["spotDistance", _spotDistance];
 	_x setSkill ["spotTime", _spotTime];
-} count (units _group);
-
-/*
-GMSAI_skillBlue = [ 
-	// _skills params["_accuracy","_aimingSpeed","_shake","_spotDistance","_spotTime","_courage","_reloadSpeed","_commanding","_general"];
-	0.15,  // accuracy
-	0.15,  // aiming speed
-	0.15, // aiming shake
-	0.50, // spot distance
-	0.50, // spot time
-	0.50, // courage
-	0.50, // reload speed
-	0.75, // commanding
-	0.70 // general, affects decision making
-];
+} forEach (units _group);
