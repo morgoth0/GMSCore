@@ -43,7 +43,7 @@ private _lanchersAdded = 0;
 (_gear select GMS_medical) params["_medical",["_chanceMedical",0.5]];
 (_gear select GMS_loot) params["_loot",["_chanceLoot",0.5]];
 
-diag_log format["<--- START MAIN LOOP --->"];
+//diag_log format["<--- START MAIN LOOP --->"];
 {
 	private _unit = _x;
 	[_unit] call GMS_fnc_unitRemoveAllGear;	
@@ -51,7 +51,7 @@ diag_log format["<--- START MAIN LOOP --->"];
 	{
 		private _weap = selectRandom _weapons;  
 		_unit addWeaponGlobal  _weap; 
-		diag_log format["_setupGroupGear: weapon %1 added to unit %2",_weap,_unit];
+		//diag_log format["_setupGroupGear: weapon %1 added to unit %2",_weap,_unit];
 		private _ammoChoices = getArray (configFile >> "CfgWeapons" >> _weap >> "magazines");
 		private _optics = getArray (configfile >> "CfgWeapons" >> _weap >> "WeaponSlotsInfo" >> "CowsSlot" >> "compatibleItems");
 		private _pointers = getArray (configFile >> "CfgWeapons" >> _weap >> "WeaponSlotsInfo" >> "PointerSlot" >> "compatibleItems");
@@ -86,9 +86,9 @@ diag_log format["<--- START MAIN LOOP --->"];
 	{
 		for "_i" from 1 to 2 do{_unit addItem (selectRandom _food)};
 	};
-	diag_log format["_setupGroupGear: (_gear select GMS_loot) = %1",(_gear select GMS_loot)];
-	diag_log format["_setupGroupGear: _loot = %1",_loot];
-	diag_log format["_setupGroupGear: _chanceLoot = %1",_chanceLoot];
+	//diag_log format["_setupGroupGear: (_gear select GMS_loot) = %1",(_gear select GMS_loot)];
+	//diag_log format["_setupGroupGear: _loot = %1",_loot];
+	//diag_log format["_setupGroupGear: _chanceLoot = %1",_chanceLoot];
 	if (random(1) < _chanceLoot && !(_food isEqualTo [])) then
 	{
 		for "_i" from 1 to 2 do {_unit addItem (selectRandom (_medical + _loot))};
