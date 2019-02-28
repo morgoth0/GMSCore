@@ -10,6 +10,7 @@
 */
 #include "\addons\GMSCore\init\GMS_defines.hpp"
 params["_group",["_garrison",false],["_scuba",false],["_swimdepth",0]];
+//diag_log format["_setupGroupBehavior: _group = %1",_group];
 _group setcombatmode "RED";
 _group setBehaviour "COMBAT";
 _group allowfleeing 0;
