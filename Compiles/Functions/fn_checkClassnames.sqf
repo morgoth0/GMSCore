@@ -10,7 +10,7 @@
 		_return: true if the string is a valid classname.
 
 */
-#include "\addons\GMSCore\init\GMS_defines.hpp"
+//#include "GMSCore\init\GMS_defines.hpp" "\addons\GMSCore\init\GMS_defines.hpp"
 params["_classNames"];
 //diag_log format["[GMS] fn_checkClassNames: _classNames = %1",_classNames];
 private _return = [];

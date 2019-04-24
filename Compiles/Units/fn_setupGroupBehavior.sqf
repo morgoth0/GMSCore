@@ -8,7 +8,7 @@
 		_garison: when true, the group will not move from its locationNull
 		_swimdepth, for scuba units, how far under the surface to swim.
 */
-#include "\addons\GMSCore\init\GMS_defines.hpp"
+//#include "GMSCore\init\GMS_defines.hpp" "\addons\GMSCore\init\GMS_defines.hpp"
 params["_group",["_garrison",false],["_scuba",false],["_swimdepth",0]];
 diag_log format["_setupGroupBehavior: _group = %1 | _garison %2 | _scuba %3",_group,_garrison,_scuba];
 _group setcombatmode "RED";

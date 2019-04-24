@@ -1,4 +1,4 @@
-#include "\addons\GMSCore\init\GMS_defines.hpp"
+//#include "GMSCore\init\GMS_defines.hpp" "\addons\GMSCore\init\GMS_defines.hpp"
 params["_vehType","_pos",["_dir",0]];
 private _veh = createVehicle[_vehType, _pos, [], 0, "NONE"];
 _veh setVectorUp surfaceNormal position _veh;

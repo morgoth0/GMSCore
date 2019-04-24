@@ -3,7 +3,9 @@
 
 	Purpose: update crypto on player.
 
+	Credits to EpochMod Team and He-Man in particular for pointing out this use of Epoch code.
+	
 */
-#include "\addons\GMSCore\init\GMS_defines.hpp"
-//diag_log format["giveTakeCrypto: _this = %1",_this];
+//#include "GMSCore\init\GMS_defines.hpp" "\addons\GMSCore\init\GMS_defines.hpp"
+diag_log format["giveTakeCrypto: _this = %1",_this];
 _this call EPOCH_server_effectCrypto;

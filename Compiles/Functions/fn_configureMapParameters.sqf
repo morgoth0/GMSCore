@@ -1,4 +1,4 @@
-#include "\addons\GMSCore\init\GMS_defines.hpp"
+//#include "GMSCore\init\GMS_defines.hpp" "\addons\GMSCore\init\GMS_defines.hpp"
 switch (toLower worldName) do 
 {
 		case "altis":{

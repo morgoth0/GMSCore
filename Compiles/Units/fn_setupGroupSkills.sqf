@@ -9,7 +9,7 @@
 
 	Return: nonoe
 */
-#include "\addons\GMSCore\init\GMS_defines.hpp"
+//#include "GMSCore\init\GMS_defines.hpp" "\addons\GMSCore\init\GMS_defines.hpp"
 params["_group","_skills"];
 //diag_log format["_setupGroupSkills: _group = %1 | _skills = %2",_group,_skills];
 _skills params["_accuracy","_aimingSpeed","_shake","_spotDistance","_spotTime","_courage","_reloadSpeed","_commanding","_general"];
