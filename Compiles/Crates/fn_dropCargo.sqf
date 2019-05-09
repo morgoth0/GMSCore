@@ -41,5 +41,5 @@ params["_crates","_location",["_height",125]];
 	
 	{
 		deleteMarker _x;
-	}forEach _markers
+	}forEach _markers;
 };

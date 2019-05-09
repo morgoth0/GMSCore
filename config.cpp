@@ -14,7 +14,7 @@ class CfgFunctions {
 	class GMS {
 		class GMS_Initialization {
 			file = "GMSCore\init";
-			//class Initialize {postInit = 1;};
+			class Initialize {postInit = 1;};
 		};
 		class GMS_CoreFunctions {
 			file = "GMSCore\Compiles\Functions";

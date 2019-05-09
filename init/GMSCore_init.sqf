@@ -12,4 +12,5 @@ if ((toLower GMS_modType) isEqualTo "exile") then
 GMS_unitType = "I_G_Sharpshooter_F";
 GMSCore_Initialized = true;
 GMS_formation = "WEDGE";
-/*
+diag_log format["GMSCore_init: script completed at %1",diag_tickTime];
+
