@@ -47,6 +47,10 @@ private _lanchersAdded = 0;
 {
 	private _unit = _x;
 	[_unit] call GMS_fnc_unitRemoveAllGear;	
+	if (random(1) < _chanceHeadgear && !(_headgear isEqualTo [])) then {_unit addHeadgear (selectRandom _headgear)};
+	if (random(1) < _chanceUniform && !(_uniforms isEqualTo [])) then {_unit forceAddUniform (selectRandom (_uniforms))};
+	if ( (random(1) < _chanceVest)  isEqualTo [] && !(_vests isEqualTo [])) then {_unit addVest (selectRandom _vests)};	
+	if (random(1) < _chanceBackpack && !(_backpacks isEqualTo [])) then {_unit addBackpack selectRandom _backpacks};
 	if ((random(1) < _chancePrimary) && !(_weapons isEqualTo [])) then
 	{
 		private _weap = selectRandom _weapons;  
@@ -76,10 +80,6 @@ private _lanchersAdded = 0;
 		if (random 1 < _chanceSecondaryWeaponOptic) then {_unit addSecondaryWeaponItem  (selectRandom _optics)};
 		if (random 1 < _chanceSeconaryWeaponPointer) then {_unit addSecondaryWeaponItem  (selectRandom _pointers)};			
 	};
-	if (random(1) < _chanceHeadgear && !(_headgear isEqualTo [])) then {_unit addHeadgear (selectRandom _headgear)};
-	if (random(1) < _chanceUniform && !(_uniforms isEqualTo [])) then {_unit forceAddUniform (selectRandom (_uniforms))};
-	if ( (random(1) < _chanceVest)  isEqualTo [] && !(_vests isEqualTo [])) then {_unit addVest (selectRandom _vests)};	
-	if (random(1) < _chanceBackpack && !(_backpacks isEqualTo [])) then {_unit addBackpack selectRandom _backpacks};
 	if (random(1) < _chanceThrowables && !(_throwables isEqualTo [])) then {_unit addItem selectRandom (_throwables)};
 	if (random(1) < _chanceBinoculars && !(_binoculars isEqualTo [])) then {_unit addWeapon (selectRandom _binoculars)};
 	if (random(1) < _chanceFood) then 
